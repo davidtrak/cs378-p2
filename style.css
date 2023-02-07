@@ -1,0 +1,25 @@
+body {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-content: center;  
+}
+
+.logo{
+  text-align: center;
+}
+
+#info{
+  color: orange;
+  margin: 0;
+}
+
+.row-item-inner{
+  height : 50%;
+}
+
+.btn-o {
+  border-radius: 100px;
+  background-color: lightblue;
+  color: black;
+}
