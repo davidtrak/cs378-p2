@@ -76,7 +76,5 @@ function order(){
         message += "Total: $" + total.innerHTML;
 
         alert(message);
-
-        clear();
     }
 }
