@@ -46,8 +46,10 @@ function subtract(){
     num.innerHTML = Math.max(0, parseInt(num.innerHTML) - 1);
 
     // update total
-    let price = document.getElementById(id.substring(0, id.length - 3) + "price");
-    total.innerHTML = Math.max(0, parseInt(total.innerHTML) - parseInt(price.innerHTML));
+    if (parseInt(num.innerHTML) !== 0){
+        let price = document.getElementById(id.substring(0, id.length - 3) + "price");
+        total.innerHTML = Math.max(0, parseInt(total.innerHTML) - parseInt(price.innerHTML));
+    }
 }
 
 function clear(){
@@ -74,5 +76,7 @@ function order(){
         message += "Total: $" + total.innerHTML;
 
         alert(message);
+
+        clear();
     }
 }
