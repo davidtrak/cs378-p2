@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <!-- Implement from below -->
-
 <body>
   <header>
     <img src="images/logo.png" class="img-fluid mx-auto d-block" alt="O's Campus Cafe logo">
@@ -54,7 +53,7 @@
 
               <!-- col for price -->
               <div class="col-3 align-self-center text-end">
-                <h5 class="price">$5</h5>
+                <h5 class="price">$<span id="mac-price">5</span></h5>
               </div>
             </div>
 
@@ -62,9 +61,9 @@
             <div class="row row-item-inner">
               <!-- quantity buttons -->
               <div class="col align-self-center text-end">
-                <button type="button" class="btn btn-primary btn-pm">+</button>
-                <p class="count">1</p>
-                <button type="button" class="btn btn-primary btn-pm">-</button>
+                <button type="button" class="btn btn-primary btn-pm btn-add" id="mac-add">+</button>
+                <span class="count" id="mac-num">0</span>
+                <button type="button" class="btn btn-primary btn-pm btn-sub" id="mac-sub">-</button>
               </div>
             </div>
 
@@ -91,7 +90,7 @@
 
               <!-- col for price -->
               <div class="col-3 align-self-center text-end">
-                <h5 class="price">$8</h5>
+                <h5 class="price">$<span id="pasta-price">8</span></h5>
               </div>
             </div>
 
@@ -99,9 +98,9 @@
             <div class="row row-item-inner">
               <!-- quantity buttons -->
               <div class="col align-self-center text-end">
-                <button type="button" class="btn btn-primary btn-pm">+</button>
-                <p class="count">1</p>
-                <button type="button" class="btn btn-primary btn-pm">-</button>
+                <button type="button" class="btn btn-primary btn-pm btn-add" id="pasta-add">+</button>
+                <p class="count" id="pasta-num">0</p>
+                <button type="button" class="btn btn-primary btn-pm btn-sub" id="pasta-sub">-</button>
               </div>
             </div>
 
@@ -128,7 +127,7 @@
 
               <!-- col for price -->
               <div class="col-3 align-self-center text-end">
-                <h5 class="price">$8</h5>
+                <h5 class="price">$<span id="taco-price">8</span></h5>
               </div>
             </div>
 
@@ -136,9 +135,9 @@
             <div class="row row-item-inner">
               <!-- quantity buttons -->
               <div class="col align-self-center text-end">
-                <button type="button" class="btn btn-primary btn-pm">+</button>
-                <p class="count">1</p>
-                <button type="button" class="btn btn-primary btn-pm">-</button>
+                <button type="button" class="btn btn-primary btn-pm btn-add" id="taco-add">+</button>
+                <p class="count" id="taco-num">0</p>
+                <button type="button" class="btn btn-primary btn-pm btn-sub" id="taco-sub">-</button>
               </div>
             </div>
 
@@ -165,7 +164,7 @@
 
               <!-- col for price -->
               <div class="col-3 align-self-center text-end">
-                <h5 class="price">$10</h5>
+                <h5 class="price">$<span id="enchi-price">10</span></h5>
               </div>
             </div>
 
@@ -173,9 +172,9 @@
             <div class="row row-item-inner">
               <!-- quantity buttons -->
               <div class="col align-self-center text-end">
-                <button type="button" class="btn btn-primary btn-pm">+</button>
-                <p class="count">1</p>
-                <button type="button" class="btn btn-primary btn-pm">-</button>
+                <button type="button" class="btn btn-primary btn-pm btn-add" id="enchi-add">+</button>
+                <p class="count" id="enchi-num">0</p>
+                <button type="button" class="btn btn-primary btn-pm btn-sub" id="enchi-sub">-</button>
               </div>
             </div>
 
@@ -192,7 +191,7 @@
       <div class="col">
         <div class="row row-item-inner">
           <div class="col-6 align-self-center">
-            <h5>subtotal <span class="subtotal">$0</span></h5>
+            <h5>subtotal $<span class="subtotal" id="subtotal">0</span></h5>
           </div>
           <div class="col-3 ">
             <button type="button" class="btn btn-primary btn-o">order</button>
@@ -204,6 +203,7 @@
       </div>
   
     </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
